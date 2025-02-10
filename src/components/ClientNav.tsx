@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { CountdownNav } from "./CountdownNav";
+import { MobileNav } from "./MobileNav";
+import { CountdownDisplay } from "./CountdownDisplay";
 
 export function ClientNav() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -37,5 +39,11 @@ export function ClientNav() {
     };
   }, []);
 
-  return <CountdownNav activeSection={activeSection} />;
+  return (
+    <>
+      <CountdownNav activeSection={activeSection} />
+      <MobileNav activeSection={activeSection} />
+      <CountdownDisplay activeSection={activeSection} />
+    </>
+  );
 } 
