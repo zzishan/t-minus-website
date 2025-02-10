@@ -1,22 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# T Minus Website
 
-## Getting Started
+A modern, space-themed website built with cutting-edge technologies.
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## Features
+
+- Interactive countdown-based navigation
+- Animated starfield background
+- Responsive design
+- Modern UI with space theme
+- Smooth animations and transitions
+
+## Development
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+
+- `/src/app`: Main application routes
+- `/src/components`: Reusable UI components
+- `/src/lib`: Utility functions
+- `/public`: Static assets
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

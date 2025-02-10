@@ -10,22 +10,31 @@ export function ClientNav() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          // When section comes into view
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
       {
-        rootMargin: "-50% 0px",
-        threshold: 0,
+        // Trigger when section is 40% visible
+        threshold: 0.4,
+        rootMargin: "-10% 0px -45% 0px"
       }
     );
 
-    document.querySelectorAll("section[id]").forEach((section) => {
+    // Get all sections and observe them
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((section) => {
       observer.observe(section);
     });
 
-    return () => observer.disconnect();
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+      observer.disconnect();
+    };
   }, []);
 
   return <CountdownNav activeSection={activeSection} />;
