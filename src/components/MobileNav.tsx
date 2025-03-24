@@ -2,20 +2,19 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 const sections = [
-  { id: "hero", label: "Welcome", countdown: 10 },
-  { id: "vision", label: "Vision", countdown: 9 },
-  { id: "about", label: "About", countdown: 8 },
-  { id: "leadership", label: "Leadership", countdown: 7 },
-  { id: "services", label: "Services", countdown: 6 },
-  { id: "process", label: "Process", countdown: 5 },
-  { id: "technology", label: "Technology", countdown: 4 },
-  { id: "innovations", label: "Innovations", countdown: 3 },
-  { id: "case-studies", label: "Case Studies", countdown: 2 },
-  { id: "testimonials", label: "Testimonials", countdown: 1 },
-  { id: "contact", label: "Launch", countdown: 0 },
+  { id: "hero", label: "Home" },
+  { id: "vision", label: "Vision" },
+  { id: "about", label: "About" },
+  { id: "leadership", label: "Leadership" },
+  { id: "services", label: "Services" },
+  { id: "process", label: "Process" },
+  { id: "technology", label: "Technology" },
+  { id: "innovations", label: "Innovations" },
+  { id: "case-studies", label: "Case Studies" },
+  { id: "testimonials", label: "Testimonials" },
+  { id: "contact", label: "Contact" },
 ];
 
 interface MobileNavProps {
@@ -26,71 +25,73 @@ export function MobileNav({ activeSection }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className="fixed top-4 right-4 z-50 lg:hidden">
       {/* Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 p-2 lg:hidden"
+        className="relative z-50 flex items-center justify-center w-12 h-12 bg-midnight border border-electric-teal/20 rounded-full"
+        aria-label={isOpen ? "Close menu" : "Open menu"}
       >
-        <div className="space-y-2">
+        <motion.div
+          animate={isOpen ? "open" : "closed"}
+          className="flex flex-col items-center justify-center"
+        >
           <motion.span
-            animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-            className="block w-8 h-0.5 bg-electric-teal"
+            variants={{
+              closed: { rotate: 0, y: 0 },
+              open: { rotate: 45, y: 6 },
+            }}
+            className="block w-6 h-0.5 bg-electric-teal mb-1.5"
           />
           <motion.span
-            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="block w-8 h-0.5 bg-electric-teal"
+            variants={{
+              closed: { opacity: 1 },
+              open: { opacity: 0 },
+            }}
+            className="block w-6 h-0.5 bg-electric-teal mb-1.5"
           />
           <motion.span
-            animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-            className="block w-8 h-0.5 bg-electric-teal"
+            variants={{
+              closed: { rotate: 0, y: 0 },
+              open: { rotate: -45, y: -6 },
+            }}
+            className="block w-6 h-0.5 bg-electric-teal"
           />
-        </div>
+        </motion.div>
       </button>
 
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-midnight/80 backdrop-blur-sm z-40 lg:hidden"
-            />
-
-            {/* Menu Panel */}
-            <motion.nav
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 20 }}
-              className="fixed top-0 right-0 h-full w-64 bg-charcoal z-50 lg:hidden"
-            >
-              <div className="p-8 space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-0 right-0 w-64 h-screen bg-midnight border-l border-electric-teal/20 shadow-xl"
+          >
+            <div className="flex flex-col pt-20 px-6">
+              <ul className="space-y-4">
                 {sections.map((section) => (
-                  <a
-                    key={section.id}
-                    href={`#${section.id}`}
-                    onClick={() => setIsOpen(false)}
-                    className={cn(
-                      "flex items-center justify-between py-2 transition-colors",
-                      activeSection === section.id
-                        ? "text-electric-teal"
-                        : "text-gray-400 hover:text-electric-teal"
-                    )}
-                  >
-                    <span className="font-display">{section.label}</span>
-                    <span className="text-sm">T-{section.countdown}</span>
-                  </a>
+                  <li key={section.id}>
+                    <a
+                      href={`#${section.id}`}
+                      onClick={() => setIsOpen(false)}
+                      className={`block py-2 px-4 rounded-md transition-colors ${
+                        activeSection === section.id
+                          ? "bg-electric-teal/10 text-electric-teal font-medium"
+                          : "text-gray-300 hover:bg-electric-teal/5 hover:text-electric-teal"
+                      }`}
+                    >
+                      {section.label}
+                    </a>
+                  </li>
                 ))}
-              </div>
-            </motion.nav>
-          </>
+              </ul>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 } 

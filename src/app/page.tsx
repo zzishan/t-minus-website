@@ -55,8 +55,8 @@ export default function Home() {
             <div className="bg-charcoal p-6 rounded-lg transform hover:scale-105 transition-transform">
               <h3 className="text-2xl font-display font-bold text-neon-green mb-4">Innovation First</h3>
               <p className="text-gray-300">
-                We're not just keeping pace with technology; we're setting the pace.
-                Our solutions are built on the cutting edge of what's possible.
+                We&apos;re not just keeping pace with technology; we&apos;re setting the pace.
+                Our solutions are built on the cutting edge of what&apos;s possible.
               </p>
             </div>
             <div className="bg-charcoal p-6 rounded-lg transform hover:scale-105 transition-transform">
@@ -69,8 +69,8 @@ export default function Home() {
             <div className="bg-charcoal p-6 rounded-lg transform hover:scale-105 transition-transform">
               <h3 className="text-2xl font-display font-bold text-neon-green mb-4">Future Ready</h3>
               <p className="text-gray-300">
-                We build solutions that don't just solve today's challenges but are
-                ready for tomorrow's opportunities.
+                We build solutions that don&apos;t just solve today&apos;s challenges but are
+                ready for tomorrow&apos;s opportunities.
               </p>
             </div>
           </div>
@@ -450,9 +450,9 @@ export default function Home() {
               <div className="absolute -top-4 -left-4 text-6xl text-electric-teal opacity-30">"</div>
               <div className="bg-charcoal rounded-lg p-8 relative">
                 <p className="text-gray-300 mb-6 relative z-10">
-                  "T Minus transformed our business with their innovative solutions.
-                  Their team's expertise and dedication to our success was exceptional.
-                  We've seen a 200% increase in efficiency since implementation."
+                  &ldquo;T Minus transformed our business with their innovative solutions.
+                  Their team&apos;s expertise and dedication to our success was exceptional.
+                  We&apos;ve seen a 200% increase in efficiency since implementation.&rdquo;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gray-800 rounded-full" />
@@ -468,9 +468,9 @@ export default function Home() {
               <div className="absolute -top-4 -left-4 text-6xl text-electric-teal opacity-30">"</div>
               <div className="bg-charcoal rounded-lg p-8 relative">
                 <p className="text-gray-300 mb-6 relative z-10">
-                  "The quantum-ready infrastructure T Minus designed for us has positioned
+                  &ldquo;The quantum-ready infrastructure T Minus designed for us has positioned
                   our company years ahead of the competition. Their vision for the future
-                  of technology is unmatched."
+                  of technology is unmatched.&rdquo;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gray-800 rounded-full" />
