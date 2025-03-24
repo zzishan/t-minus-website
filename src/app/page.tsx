@@ -44,83 +44,26 @@ export default function Home() {
       {/* Vision Section */}
       <section
         id="vision"
-        className="py-28 bg-gradient-to-b from-charcoal to-midnight"
+        className="py-20 bg-gradient-to-b from-charcoal to-midnight"
       >
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-8 text-center">
               Our <span className="text-neon-green">Vision</span>
             </h2>
-            
-            <div className="bg-charcoal/60 p-8 md:p-10 rounded-2xl backdrop-blur-sm border border-neon-green/20 relative overflow-hidden">
-              {/* Background accent */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-neon-green/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
-              
-              <p className="text-lg text-gray-300 relative z-10">
+            <div className="bg-charcoal/60 p-8 rounded-2xl backdrop-blur-sm border border-neon-green/20">
+              <p className="text-lg text-gray-300">
                 We envision a future where technology seamlessly enhances human potential,
                 where innovation knows no bounds, and where every business can harness
                 the power of cutting-edge solutions to achieve their goals.
               </p>
-              
-              <div className="grid md:grid-cols-2 gap-8 mt-10 relative z-10">
-                <div className="bg-midnight/40 p-6 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-4">
-                    <span className="text-neon-green text-xl font-bold">1</span>
-                  </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-3">Accessible Technology</h3>
-                  <p className="text-gray-300">
-                    We're committed to democratizing technology, making cutting-edge solutions 
-                    accessible to businesses of all sizes. Everyone deserves the power to innovate, 
-                    regardless of technical expertise or implementation complexity.
-                  </p>
-                </div>
-                
-                <div className="bg-midnight/40 p-6 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-4">
-                    <span className="text-neon-green text-xl font-bold">2</span>
-                  </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-3">New Age Solutions</h3>
-                  <p className="text-gray-300">
-                    We harness emerging technologies like AI, machine learning, and advanced 
-                    cloud architectures to create competitive advantages for our clients, 
-                    driving tangible business outcomes with innovative approaches.
-                  </p>
-                </div>
-                
-                <div className="bg-midnight/40 p-6 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-4">
-                    <span className="text-neon-green text-xl font-bold">3</span>
-                  </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-3">Problem-Specific Innovation</h3>
-                  <p className="text-gray-300">
-                    We believe in purposeful innovation – developing tailored solutions that address 
-                    specific business challenges rather than one-size-fits-all approaches. This ensures 
-                    maximum impact where it matters most.
-                  </p>
-                </div>
-                
-                <div className="bg-midnight/40 p-6 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-4">
-                    <span className="text-neon-green text-xl font-bold">4</span>
-                  </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-3">Holistic Efficiency</h3>
-                  <p className="text-gray-300">
-                    Our definition of efficiency goes beyond performance metrics. We create solutions 
-                    that are resource-efficient, cost-effective, energy-conscious, and designed for 
-                    long-term sustainability and scalability.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="mt-10 relative z-10">
-                <div className="border-t border-neon-green/10 pt-8 text-center">
-                  <p className="text-lg text-gray-300 italic">
-                    Our mission is to be the catalyst that transforms this vision into reality,
-                    one breakthrough at a time.
-                  </p>
-                  <div className="mt-6 inline-flex items-center px-5 py-2.5 rounded-full bg-neon-green/10 border border-neon-green/20">
-                    <span className="text-cyber-teal font-medium">Innovating since 2023</span>
-                  </div>
+              <p className="text-lg text-gray-300 mt-4">
+                Our mission is to be the catalyst that transforms this vision into reality,
+                one breakthrough at a time.
+              </p>
+              <div className="mt-8 flex justify-center">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-neon-green/10 border border-neon-green/20">
+                  <span className="text-cyber-teal font-medium">Innovating since 2023</span>
                 </div>
               </div>
             </div>
@@ -128,131 +71,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-28 bg-gradient-to-b from-midnight to-charcoal">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
-            About <span className="text-neon-green">Us</span>
+      {/* About Section (T-8) */}
+      <section id="about" className="h-screen flex items-center justify-center relative">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-electric-teal mb-8">
+            About Us
           </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
-              <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Innovation First</h3>
-              <p className="text-gray-300 relative z-10">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-charcoal p-6 rounded-lg transform hover:scale-105 transition-transform">
+              <h3 className="text-2xl font-display font-bold text-neon-green mb-4">Innovation First</h3>
+              <p className="text-gray-300">
                 We&apos;re not just keeping pace with technology; we&apos;re setting the pace.
-                Our solutions are built on the cutting edge of what&apos;s possible, constantly
-                pushing boundaries to deliver unprecedented results.
+                Our solutions are built on the cutting edge of what&apos;s possible.
               </p>
             </div>
-            
-            <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyber-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
-              <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Client Success</h3>
-              <p className="text-gray-300 relative z-10">
+            <div className="bg-charcoal p-6 rounded-lg transform hover:scale-105 transition-transform">
+              <h3 className="text-2xl font-display font-bold text-neon-green mb-4">Client Success</h3>
+              <p className="text-gray-300">
                 Your success is our mission. We work tirelessly to ensure every solution
-                we deliver creates real, measurable value for your business and gives you
-                a competitive advantage in your industry.
+                we deliver creates real, measurable value for your business.
               </p>
             </div>
-            
-            <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
-              <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Future Ready</h3>
-              <p className="text-gray-300 relative z-10">
+            <div className="bg-charcoal p-6 rounded-lg transform hover:scale-105 transition-transform">
+              <h3 className="text-2xl font-display font-bold text-neon-green mb-4">Future Ready</h3>
+              <p className="text-gray-300">
                 We build solutions that don&apos;t just solve today&apos;s challenges but are
-                ready for tomorrow&apos;s opportunities. Our forward-thinking approach ensures
-                your investment continues to deliver value for years to come.
+                ready for tomorrow&apos;s opportunities.
               </p>
             </div>
-          </div>
-          
-          <div className="mt-16 text-center">
-            <a href="#services" className="inline-flex items-center px-6 py-3 border border-neon-green/30 rounded-full text-neon-green hover:bg-neon-green/10 transition-colors">
-              <span className="mr-2">Discover Our Services</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </a>
           </div>
         </div>
       </section>
 
-      {/* Leadership Section */}
-      <section id="leadership" className="py-28 bg-gradient-to-b from-charcoal to-midnight">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
-            Our <span className="text-neon-green">Leadership</span>
+      {/* Leadership Section (T-7) */}
+      <section id="leadership" className="h-screen flex items-center justify-center relative">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-electric-teal mb-8">
+            Our Leadership
           </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 */}
-            <div className="bg-charcoal rounded-xl overflow-hidden group border border-neon-green/10">
-              <div className="aspect-square bg-midnight/60 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-70 group-hover:opacity-90 transition-opacity z-10" />
-                <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex gap-3">
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Li</span>
-                    </a>
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Tw</span>
-                    </a>
-                  </div>
-                </div>
+            <div className="bg-charcoal rounded-lg overflow-hidden group">
+              <div className="aspect-square bg-gray-800 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Sarah Chen</h3>
-                <p className="text-cyber-teal mb-4">Chief Executive Officer</p>
+                <h3 className="text-2xl font-display font-bold text-electric-teal">Sarah Chen</h3>
+                <p className="text-neon-green mb-2">Chief Executive Officer</p>
                 <p className="text-gray-300">
                   Visionary leader with 15+ years of experience in tech innovation
                   and digital transformation.
                 </p>
               </div>
             </div>
-            
             {/* Team Member 2 */}
-            <div className="bg-charcoal rounded-xl overflow-hidden group border border-neon-green/10">
-              <div className="aspect-square bg-midnight/60 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-70 group-hover:opacity-90 transition-opacity z-10" />
-                <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex gap-3">
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Li</span>
-                    </a>
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Tw</span>
-                    </a>
-                  </div>
-                </div>
+            <div className="bg-charcoal rounded-lg overflow-hidden group">
+              <div className="aspect-square bg-gray-800 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Marcus Rodriguez</h3>
-                <p className="text-cyber-teal mb-4">Chief Technology Officer</p>
+                <h3 className="text-2xl font-display font-bold text-electric-teal">Marcus Rodriguez</h3>
+                <p className="text-neon-green mb-2">Chief Technology Officer</p>
                 <p className="text-gray-300">
                   Tech pioneer specializing in AI, blockchain, and cloud architecture.
                 </p>
               </div>
             </div>
-            
             {/* Team Member 3 */}
-            <div className="bg-charcoal rounded-xl overflow-hidden group border border-neon-green/10">
-              <div className="aspect-square bg-midnight/60 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-70 group-hover:opacity-90 transition-opacity z-10" />
-                <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex gap-3">
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Li</span>
-                    </a>
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Tw</span>
-                    </a>
-                  </div>
-                </div>
+            <div className="bg-charcoal rounded-lg overflow-hidden group">
+              <div className="aspect-square bg-gray-800 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Dr. Aisha Patel</h3>
-                <p className="text-cyber-teal mb-4">Head of Innovation</p>
+                <h3 className="text-2xl font-display font-bold text-electric-teal">Dr. Aisha Patel</h3>
+                <p className="text-neon-green mb-2">Head of Innovation</p>
                 <p className="text-gray-300">
                   Research leader driving breakthrough innovations in emerging technologies.
                 </p>
