@@ -44,66 +44,109 @@ export default function Home() {
       {/* Vision Section */}
       <section
         id="vision"
-        className="min-h-screen flex items-center py-20 bg-gradient-to-b from-charcoal to-midnight"
+        className="min-h-screen flex items-center py-20 bg-gradient-to-b from-charcoal to-midnight relative overflow-hidden"
       >
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-8 text-center">
-              Our <span className="text-neon-green">Vision</span>
-            </h2>
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Grid lines for tech feel */}
+          <div className="absolute w-full h-full grid-bg transform scale-150 opacity-20" />
+          
+          {/* Floating orbs */}
+          <div className="absolute top-1/4 left-1/4 w-40 h-40 rounded-full bg-neon-green/5 filter blur-3xl animate-float" />
+          <div className="absolute bottom-1/4 right-1/3 w-60 h-60 rounded-full bg-cyber-teal/5 filter blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 right-1/4 w-32 h-32 rounded-full bg-tech-blue/5 filter blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Animated title with glowing effect */}
+            <div className="text-center mb-16 relative">
+              <h2 className="text-5xl md:text-7xl font-display font-bold text-white inline-block relative">
+                Our <span className="text-neon-green glow">Vision</span>
+              </h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-neon-green to-transparent rounded-full mx-auto mt-4"></div>
+            </div>
             
-            <div className="bg-charcoal/60 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-neon-green/20 relative overflow-hidden">
-              {/* Background accent */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-neon-green/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            {/* Main vision statement - Circle design */}
+            <div className="relative mb-24 flex justify-center">
+              <div className="w-64 h-64 md:w-96 md:h-96 rounded-full bg-midnight border border-neon-green/30 flex items-center justify-center p-8 shadow-lg shadow-neon-green/10 relative z-20">
+                <p className="text-lg md:text-xl text-gray-300 text-center font-display">
+                  We envision a future where technology seamlessly enhances human potential,
+                  where innovation knows no bounds.
+                </p>
+              </div>
               
-              <p className="text-lg text-gray-300 relative z-10">
-                We envision a future where technology seamlessly enhances human potential,
-                where innovation knows no bounds, and where every business can harness
-                the power of cutting-edge solutions to achieve their goals.
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-6 mt-8 relative z-10">
-                <div className="bg-midnight/40 p-5 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-3">
-                    <span className="text-neon-green text-xl font-bold">1</span>
+              {/* Orbiting elements */}
+              <div className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 animate-spin-slow">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-neon-green/20"></div>
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cyber-teal/20"></div>
+                <div className="absolute top-1/2 -left-4 -translate-y-1/2 w-8 h-8 rounded-full bg-tech-blue/20"></div>
+                <div className="absolute top-1/2 -right-4 -translate-y-1/2 w-8 h-8 rounded-full bg-neon-green/20"></div>
+              </div>
+            </div>
+            
+            {/* Vision pillars - Hexagonal arrangement */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+              {/* Vision Pillar 1 */}
+              <div className="group">
+                <div className="bg-midnight/60 backdrop-blur-sm p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10 h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <span className="text-neon-green text-xl font-bold">1</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-neon-green">Accessible Technology</h3>
                   </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-2">Accessible Technology</h3>
                   <p className="text-gray-300">
                     We're committed to democratizing technology, making cutting-edge solutions 
                     accessible to businesses of all sizes. Everyone deserves the power to innovate, 
                     regardless of technical expertise or implementation complexity.
                   </p>
                 </div>
-                
-                <div className="bg-midnight/40 p-5 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-3">
-                    <span className="text-neon-green text-xl font-bold">2</span>
+              </div>
+              
+              {/* Vision Pillar 2 */}
+              <div className="group">
+                <div className="bg-midnight/60 backdrop-blur-sm p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10 h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <span className="text-neon-green text-xl font-bold">2</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-neon-green">New Age Solutions</h3>
                   </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-2">New Age Solutions</h3>
                   <p className="text-gray-300">
                     We harness emerging technologies like AI, machine learning, and advanced 
                     cloud architectures to create competitive advantages for our clients, 
                     driving tangible business outcomes with innovative approaches.
                   </p>
                 </div>
-                
-                <div className="bg-midnight/40 p-5 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-3">
-                    <span className="text-neon-green text-xl font-bold">3</span>
+              </div>
+              
+              {/* Vision Pillar 3 */}
+              <div className="group">
+                <div className="bg-midnight/60 backdrop-blur-sm p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10 h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <span className="text-neon-green text-xl font-bold">3</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-neon-green">Problem-Specific Innovation</h3>
                   </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-2">Problem-Specific Innovation</h3>
                   <p className="text-gray-300">
                     We believe in purposeful innovation – developing tailored solutions that address 
                     specific business challenges rather than one-size-fits-all approaches. This ensures 
                     maximum impact where it matters most.
                   </p>
                 </div>
-                
-                <div className="bg-midnight/40 p-5 rounded-xl border border-neon-green/10 transform transition-transform hover:translate-y-[-4px]">
-                  <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mb-3">
-                    <span className="text-neon-green text-xl font-bold">4</span>
+              </div>
+              
+              {/* Vision Pillar 4 */}
+              <div className="group">
+                <div className="bg-midnight/60 backdrop-blur-sm p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10 h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <span className="text-neon-green text-xl font-bold">4</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-neon-green">Holistic Efficiency</h3>
                   </div>
-                  <h3 className="text-xl font-display font-bold text-neon-green mb-2">Holistic Efficiency</h3>
                   <p className="text-gray-300">
                     Our definition of efficiency goes beyond performance metrics. We create solutions 
                     that are resource-efficient, cost-effective, energy-conscious, and designed for 
@@ -111,16 +154,18 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              
-              <div className="mt-8 relative z-10">
-                <div className="border-t border-neon-green/10 pt-6 text-center">
-                  <p className="text-lg text-gray-300 italic">
-                    Our mission is to be the catalyst that transforms this vision into reality,
-                    one breakthrough at a time.
-                  </p>
-                  <div className="mt-4 inline-flex items-center px-5 py-2 rounded-full bg-neon-green/10 border border-neon-green/20">
-                    <span className="text-cyber-teal font-medium">Innovating since 2024</span>
-                  </div>
+            </div>
+            
+            {/* Mission statement - with glowing accent */}
+            <div className="mt-20 text-center relative">
+              <div className="inline-block bg-midnight/40 backdrop-blur-md px-10 py-8 rounded-xl border border-neon-green/20 relative overflow-hidden group hover:border-neon-green/40 transition-colors">
+                <div className="absolute -inset-1 bg-gradient-to-r from-neon-green/20 via-tech-blue/10 to-cyber-teal/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <p className="text-2xl text-gray-300 italic font-display relative z-10">
+                  "Our mission is to be the catalyst that transforms this vision into reality,
+                  <span className="block mt-2">one breakthrough at a time."</span>
+                </p>
+                <div className="mt-4 inline-flex items-center px-5 py-2 rounded-full bg-neon-green/10 border border-neon-green/20">
+                  <span className="text-cyber-teal font-medium">Innovating since 2024</span>
                 </div>
               </div>
             </div>
