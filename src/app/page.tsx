@@ -119,7 +119,7 @@ export default function Home() {
                     one breakthrough at a time.
                   </p>
                   <div className="mt-4 inline-flex items-center px-5 py-2 rounded-full bg-neon-green/10 border border-neon-green/20">
-                    <span className="text-cyber-teal font-medium">Innovating since 2023</span>
+                    <span className="text-cyber-teal font-medium">Innovating since 2024</span>
                   </div>
                 </div>
               </div>
@@ -174,90 +174,6 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section id="leadership" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-charcoal to-midnight">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
-            Our <span className="text-neon-green">Leadership</span>
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Team Member 1 */}
-            <div className="bg-charcoal rounded-xl overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
-              <div className="aspect-square bg-midnight/60 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-70 group-hover:opacity-90 transition-opacity z-10" />
-                <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex gap-3">
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Li</span>
-                    </a>
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Tw</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Sarah Chen</h3>
-                <p className="text-cyber-teal mb-4">Chief Executive Officer</p>
-                <p className="text-gray-300">
-                  Visionary leader with 15+ years of experience in tech innovation
-                  and digital transformation.
-                </p>
-              </div>
-            </div>
-            
-            {/* Team Member 2 */}
-            <div className="bg-charcoal rounded-xl overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
-              <div className="aspect-square bg-midnight/60 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-70 group-hover:opacity-90 transition-opacity z-10" />
-                <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex gap-3">
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Li</span>
-                    </a>
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Tw</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Marcus Rodriguez</h3>
-                <p className="text-cyber-teal mb-4">Chief Technology Officer</p>
-                <p className="text-gray-300">
-                  Tech pioneer specializing in AI, blockchain, and cloud architecture.
-                </p>
-              </div>
-            </div>
-            
-            {/* Team Member 3 */}
-            <div className="bg-charcoal rounded-xl overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
-              <div className="aspect-square bg-midnight/60 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-70 group-hover:opacity-90 transition-opacity z-10" />
-                <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex gap-3">
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Li</span>
-                    </a>
-                    <a href="#" className="w-8 h-8 rounded-full bg-neon-green/10 flex items-center justify-center hover:bg-neon-green/20 transition-colors">
-                      <span className="text-neon-green text-sm">Tw</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Dr. Aisha Patel</h3>
-                <p className="text-cyber-teal mb-4">Head of Innovation</p>
-                <p className="text-gray-300">
-                  Research leader driving breakthrough innovations in emerging technologies.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -460,53 +376,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Innovations Section (T-3) */}
-      <section id="innovations" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-charcoal to-midnight">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
-            Latest <span className="text-neon-green">Innovations</span>
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Innovation 1 */}
-            <div className="group relative">
-              <div className="bg-charcoal rounded-lg p-8 relative z-10 h-full transform group-hover:-translate-y-2 transition-transform border border-neon-green/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-                <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">
-                  AI-Powered Decision Engine
-                </h3>
-                <p className="text-gray-300 mb-6 relative z-10">
-                  Revolutionary decision-making system that combines machine learning
-                  with expert knowledge to provide real-time strategic insights.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-midnight rounded-full text-neon-green text-sm border border-neon-green/30">AI</span>
-                  <span className="px-3 py-1 bg-midnight rounded-full text-neon-green text-sm border border-neon-green/30">ML</span>
-                  <span className="px-3 py-1 bg-midnight rounded-full text-neon-green text-sm border border-neon-green/30">Neural Networks</span>
-                </div>
-              </div>
-            </div>
-            {/* Innovation 2 */}
-            <div className="group relative">
-              <div className="bg-charcoal rounded-lg p-8 relative z-10 h-full transform group-hover:-translate-y-2 transition-transform border border-neon-green/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-                <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">
-                  Edge Computing Platform
-                </h3>
-                <p className="text-gray-300 mb-6 relative z-10">
-                  Next-generation architecture designed to process data closer to the source,
-                  enabling faster response times and reduced bandwidth usage.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-midnight rounded-full text-neon-green text-sm border border-neon-green/30">Edge</span>
-                  <span className="px-3 py-1 bg-midnight rounded-full text-neon-green text-sm border border-neon-green/30">Cloud</span>
-                  <span className="px-3 py-1 bg-midnight rounded-full text-neon-green text-sm border border-neon-green/30">IoT</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Case Studies Section (T-2) */}
       <section id="case-studies" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-midnight to-charcoal">
         <div className="container mx-auto px-6">
@@ -590,7 +459,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
             Client <span className="text-neon-green">Testimonials</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Testimonial 1 */}
             <div className="relative h-full">
               <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
@@ -623,24 +492,6 @@ export default function Home() {
                   <div>
                     <h4 className="font-display font-bold text-neon-green">Dr. Elena Rodriguez</h4>
                     <p className="text-gray-400">Head of Innovation, Future Systems</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Testimonial 3 - New */}
-            <div className="relative h-full">
-              <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
-              <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
-                <p className="text-gray-300 mb-6 relative z-10 flex-grow">
-                  &ldquo;Working with T Minus has been a game-changer for our startup. 
-                  Their AI solutions helped us scale rapidly while maintaining quality. 
-                  Simply put, they delivered beyond our expectations.&rdquo;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
-                  <div>
-                    <h4 className="font-display font-bold text-neon-green">Sarah Jenkins</h4>
-                    <p className="text-gray-400">Founder, NextGen AI</p>
                   </div>
                 </div>
               </div>
@@ -701,7 +552,7 @@ export default function Home() {
               </form>
             </div>
           </div>
-    </div>
+        </div>
       </section>
     </main>
   );
