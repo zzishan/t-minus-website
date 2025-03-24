@@ -7,39 +7,65 @@ export default function Home() {
       <Starfield />
       <ClientNav />
       
-      {/* Hero Section (T-10) */}
+      {/* Hero Section */}
       <section id="hero" className="h-screen flex items-center justify-center relative">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-6xl md:text-8xl font-display font-bold bg-gradient-to-r from-electric-teal to-neon-green bg-clip-text text-transparent animate-fade-in">
-            T Minus
-          </h1>
-          <p className="text-xl md:text-2xl mt-6 text-gray-300 max-w-2xl mx-auto animate-slide-in">
-            Propelling clients into the future with innovative technology solutions
-          </p>
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Grid Background */}
+          <div className="grid-bg" />
+          <div className="absolute inset-0 bg-gradient-to-b from-midnight to-charcoal opacity-80 z-10" />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-20">
+          <div className="flex flex-col items-center justify-center min-h-screen text-center">
+            <h1 className="text-6xl md:text-8xl font-display font-bold text-white mb-4">
+              T <span className="text-neon-green">Minus</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
+              Propelling clients into the future with innovative technology
+              solutions
+            </p>
+            <div className="mt-12">
+              <a
+                href="#vision"
+                className="glow px-8 py-3 bg-neon-green text-midnight font-medium rounded-full hover:bg-neon-green/90 transition-colors"
+              >
+                Explore Our Vision
+              </a>
+            </div>
+            
+            {/* Floating Elements */}
+            <div className="absolute top-1/3 left-1/4 w-8 h-8 rounded-full bg-cyber-teal/20 blur-sm animate-pulse" />
+            <div className="absolute bottom-1/4 right-1/4 w-12 h-12 rounded-full bg-tech-blue/20 blur-sm animate-pulse" />
+            <div className="absolute bottom-1/3 left-1/3 w-10 h-10 rounded-full bg-neon-green/20 blur-sm animate-pulse" />
+          </div>
         </div>
       </section>
 
-      {/* Vision Section (T-9) */}
-      <section id="vision" className="h-screen flex items-center justify-center relative">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-electric-teal mb-8">
-            Our Vision
-          </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+      {/* Vision Section */}
+      <section
+        id="vision"
+        className="py-20 bg-gradient-to-b from-charcoal to-midnight"
+      >
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-8 text-center">
+              Our <span className="text-neon-green">Vision</span>
+            </h2>
+            <div className="bg-charcoal/60 p-8 rounded-2xl backdrop-blur-sm border border-neon-green/20">
               <p className="text-lg text-gray-300">
                 We envision a future where technology seamlessly enhances human potential,
                 where innovation knows no bounds, and where every business can harness
                 the power of cutting-edge solutions to achieve their goals.
               </p>
-              <p className="text-lg text-gray-300">
+              <p className="text-lg text-gray-300 mt-4">
                 Our mission is to be the catalyst that transforms this vision into reality,
                 one breakthrough at a time.
               </p>
-            </div>
-            <div className="relative">
-              {/* Placeholder for future interactive visualization */}
-              <div className="aspect-square bg-charcoal rounded-lg animate-float" />
+              <div className="mt-8 flex justify-center">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-neon-green/10 border border-neon-green/20">
+                  <span className="text-cyber-teal font-medium">Innovating since 2023</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

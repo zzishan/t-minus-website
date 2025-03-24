@@ -29,7 +29,7 @@ export function MobileNav({ activeSection }: MobileNavProps) {
       {/* Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative z-50 flex items-center justify-center w-12 h-12 bg-midnight border border-electric-teal/20 rounded-full"
+        className="relative z-50 flex items-center justify-center w-12 h-12 bg-midnight border border-neon-green/20 rounded-full"
         aria-label={isOpen ? "Close menu" : "Open menu"}
       >
         <motion.div
@@ -41,21 +41,21 @@ export function MobileNav({ activeSection }: MobileNavProps) {
               closed: { rotate: 0, y: 0 },
               open: { rotate: 45, y: 6 },
             }}
-            className="block w-6 h-0.5 bg-electric-teal mb-1.5"
+            className="block w-6 h-0.5 bg-neon-green mb-1.5"
           />
           <motion.span
             variants={{
               closed: { opacity: 1 },
               open: { opacity: 0 },
             }}
-            className="block w-6 h-0.5 bg-electric-teal mb-1.5"
+            className="block w-6 h-0.5 bg-neon-green mb-1.5"
           />
           <motion.span
             variants={{
               closed: { rotate: 0, y: 0 },
               open: { rotate: -45, y: -6 },
             }}
-            className="block w-6 h-0.5 bg-electric-teal"
+            className="block w-6 h-0.5 bg-neon-green"
           />
         </motion.div>
       </button>
@@ -68,7 +68,7 @@ export function MobileNav({ activeSection }: MobileNavProps) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-0 right-0 w-64 h-screen bg-midnight border-l border-electric-teal/20 shadow-xl"
+            className="fixed top-0 right-0 w-64 h-screen bg-midnight border-l border-neon-green/20 shadow-xl"
           >
             <div className="flex flex-col pt-20 px-6">
               <ul className="space-y-4">
@@ -79,8 +79,8 @@ export function MobileNav({ activeSection }: MobileNavProps) {
                       onClick={() => setIsOpen(false)}
                       className={`block py-2 px-4 rounded-md transition-colors ${
                         activeSection === section.id
-                          ? "bg-electric-teal/10 text-electric-teal font-medium"
-                          : "text-gray-300 hover:bg-electric-teal/5 hover:text-electric-teal"
+                          ? "bg-neon-green/10 text-neon-green font-medium"
+                          : "text-gray-300 hover:bg-neon-green/5 hover:text-neon-green"
                       }`}
                     >
                       {section.label}
