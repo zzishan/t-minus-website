@@ -536,27 +536,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section (T-1) */}
+      {/* Testimonials Section */}
       <section id="testimonials" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-charcoal to-midnight">
         <div className="container mx-auto px-6">
           <ScrollReveal animation="fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
-            Client <span className="text-neon-green">Testimonials</span>
-          </h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
+              Client <span className="text-neon-green">Testimonials</span>
+            </h2>
           </ScrollReveal>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Testimonial 1 - Unikraft */}
             <ScrollReveal animation="rotate-in" delay={100}>
-            <div className="relative h-full">
-              <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
-              <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
-                <p className="text-gray-300 mb-6 relative z-10 flex-grow">
+              <div className="relative h-full">
+                <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
+                <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
+                  <p className="text-gray-300 mb-6 relative z-10 flex-grow">
                     &ldquo;T Minus delivered an exceptional process mapping tool that has revolutionized our industrial automation workflows. Their solution has streamlined our operations and dramatically improved our project delivery timelines. Their technical expertise and commitment to our success has made them a valuable partner.&rdquo;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
-                  <div>
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
+                    <div>
                       <h4 className="font-display font-bold text-neon-green">Datta Shinde</h4>
                       <p className="text-gray-400">CEO, Unikraft</p>
                     </div>
@@ -567,18 +567,18 @@ export default function Home() {
             
             {/* Testimonial 2 - Y.S. Aviations */}
             <ScrollReveal animation="rotate-in" delay={200}>
-            <div className="relative h-full">
-              <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
-              <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
-                <p className="text-gray-300 mb-6 relative z-10 flex-grow">
+              <div className="relative h-full">
+                <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
+                <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
+                  <p className="text-gray-300 mb-6 relative z-10 flex-grow">
                     &ldquo;The enhancements T Minus made to our aviation website have significantly improved user engagement and operational efficiency. Their team's technical prowess and responsive support have been invaluable. They've transformed our digital presence while maintaining the distinctive character of our brand.&rdquo;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
-                  <div>
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
+                    <div>
                       <h4 className="font-display font-bold text-neon-green">Mohammad Sadik</h4>
                       <p className="text-gray-400">CEO & Director, Y.S. Aviations</p>
-            </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -587,24 +587,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact/Launch Section (T-0) */}
+      {/* Contact/Launch Section */}
       <section id="contact" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-midnight to-charcoal">
         <div className="container mx-auto px-6">
           <ScrollReveal animation="fade-in">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-              Ready for <span className="text-neon-green">Launch</span>?
-            </h2>
-            <p className="text-xl text-gray-300">
-              Take the first step towards transforming your business with cutting-edge technology.
-            </p>
-          </div>
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+                Ready for <span className="text-neon-green">Launch</span>?
+              </h2>
+              <p className="text-xl text-gray-300">
+                Take the first step towards transforming your business with cutting-edge technology.
+              </p>
+            </div>
           </ScrollReveal>
           
           <ScrollReveal animation="bounce-in" delay={200}>
             <div className="max-w-2xl mx-auto">
               <div className="bg-charcoal rounded-xl p-8 border border-neon-green/20 shadow-lg shadow-neon-green/5">
-                <form className="space-y-6" action="https://formspree.io/f/xeqgeknq" method="POST">
+                <form className="space-y-6" action="https://formspree.io/f/meojqqjd" method="POST">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-gray-300 mb-2" htmlFor="name">Name</label>
