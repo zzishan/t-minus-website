@@ -441,67 +441,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technology Section (T-4) */}
-      <section id="technology" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-midnight to-charcoal">
-        <div className="container mx-auto px-6">
-          <ScrollReveal animation="fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-12 text-center">
-              Our <span className="text-neon-green">Technology Stack</span>
-            </h2>
-          </ScrollReveal>
-          
-          <div className="grid gap-12 max-w-5xl mx-auto">
-            {/* Frontend */}
-            <ScrollReveal animation="slide-right">
-              <div className="space-y-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Frontend Technologies</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {['React', 'Next.js', 'Vue', 'Angular'].map((tech, index) => (
-                    <ScrollReveal key={tech} animation="scale-in" delay={index * 100}>
-                      <div className="bg-charcoal p-4 rounded-lg text-center hover:bg-charcoal/70 transition-colors border border-neon-green/10 hover:border-neon-green/30">
-                        <span className="text-gray-300">{tech}</span>
-                      </div>
-                    </ScrollReveal>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-            
-            {/* Backend */}
-            <ScrollReveal animation="slide-left" delay={200}>
-              <div className="space-y-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Backend Technologies</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {['Node.js', 'Python', 'Java', 'Go'].map((tech, index) => (
-                    <ScrollReveal key={tech} animation="scale-in" delay={index * 100 + 200}>
-                      <div className="bg-charcoal p-4 rounded-lg text-center hover:bg-charcoal/70 transition-colors border border-neon-green/10 hover:border-neon-green/30">
-                        <span className="text-gray-300">{tech}</span>
-                      </div>
-                    </ScrollReveal>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-            
-            {/* Cloud & DevOps */}
-            <ScrollReveal animation="slide-right" delay={400}>
-              <div className="space-y-6">
-                <h3 className="text-2xl font-display font-bold text-neon-green">Cloud & DevOps</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {['AWS', 'Azure', 'GCP', 'Kubernetes'].map((tech, index) => (
-                    <ScrollReveal key={tech} animation="scale-in" delay={index * 100 + 400}>
-                      <div className="bg-charcoal p-4 rounded-lg text-center hover:bg-charcoal/70 transition-colors border border-neon-green/10 hover:border-neon-green/30">
-                        <span className="text-gray-300">{tech}</span>
-                      </div>
-                    </ScrollReveal>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
       {/* Case Studies Section (T-2) */}
       <section id="case-studies" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-midnight to-charcoal">
         <div className="container mx-auto px-6">
@@ -512,77 +451,84 @@ export default function Home() {
           </ScrollReveal>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Case Study 1 */}
+            {/* Case Study 1 - Process Mapping Tool */}
             <ScrollReveal animation="slide-up" delay={100}>
-              <div className="bg-charcoal rounded-lg overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all">
+              <div className="bg-charcoal rounded-lg overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
                 <div className="aspect-video bg-midnight relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-neon-green font-display">FinTech Revolution</span>
+                    <span className="text-neon-green font-display">Industrial Automation</span>
+                  </div>
+                  {/* Process Mapping Icon - Detailed Flowchart */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neon-green/30 w-24 h-24">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 3h4v4H3V3zm7 4h4V3h-4v4zm7-4v4h4V3h-4zM3 14h4v-4H3v4zm7 0h4v-4h-4v4zm7 0h4v-4h-4v4zM3 21h4v-4H3v4zm7 0h4v-4h-4v4zm7 0h4v-4h-4v4z"/>
+                      <path d="M17 8h1v3h-1V8zm-6 0h1v3h-1V8zM5 8h1v3H5V8zm0 6h1v3H5v-3zm6 0h1v3h-1v-3zm6 0h1v3h-1v-3z"/>
+                    </svg>
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-display font-bold text-neon-green mb-2">
-                    Global Bank Digital Transformation
+                    Process Mapping Tool
                   </h3>
-                  <p className="text-gray-300 mb-4">
-                    Modernized legacy systems for a Fortune 500 bank, resulting in 60%
-                    faster transaction processing.
+                  <p className="text-gray-300">
+                    Built a comprehensive value stream mapping tool for an industrial automation company,
+                    enabling efficient organization, management, and tracking of tasks.
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-neon-green">Read More →</span>
-                    <span className="text-gray-400">ROI: 300%</span>
-                  </div>
                 </div>
               </div>
             </ScrollReveal>
             
-            {/* Case Study 2 */}
+            {/* Case Study 2 - ERP Integration */}
             <ScrollReveal animation="slide-up" delay={200}>
-              <div className="bg-charcoal rounded-lg overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all">
+              <div className="bg-charcoal rounded-lg overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
                 <div className="aspect-video bg-midnight relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-neon-green font-display">Healthcare AI</span>
+                    <span className="text-neon-green font-display">Enterprise Integration</span>
+                  </div>
+                  {/* ERP Integration Icon - Database with Connections */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-cyber-teal/30 w-24 h-24">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 3C7.58 3 4 4.79 4 7V17C4 19.21 7.59 21 12 21S20 19.21 20 17V7C20 4.79 16.42 3 12 3M12 5C16.41 5 18 6.69 18 7C18 7.31 16.41 9 12 9S6 7.31 6 7C6 6.69 7.59 5 12 5M18 17C18 17.5 15.87 19 12 19S6 17.5 6 17V14.77C7.61 15.55 9.72 16 12 16S16.39 15.55 18 14.77V17M18 12.45C16.7 13.4 14.42 14 12 14C9.58 14 7.3 13.4 6 12.45V9.64C7.47 10.47 9.61 11 12 11C14.39 11 16.53 10.47 18 9.64V12.45Z"/>
+                    </svg>
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-display font-bold text-neon-green mb-2">
-                    AI-Powered Diagnostics Platform
+                    ERP System Integration
                   </h3>
-                  <p className="text-gray-300 mb-4">
-                    Developed an AI system that improved diagnostic accuracy by 40%
-                    for a leading healthcare provider.
+                  <p className="text-gray-300">
+                    Successfully integrated our process mapping tool with the client's existing ERP system,
+                    creating a seamless workflow between operational and management systems.
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-neon-green">Read More →</span>
-                    <span className="text-gray-400">Lives Impacted: 1M+</span>
-                  </div>
                 </div>
               </div>
             </ScrollReveal>
             
-            {/* Case Study 3 */}
+            {/* Case Study 3 - Aviation Website */}
             <ScrollReveal animation="slide-up" delay={300}>
-              <div className="bg-charcoal rounded-lg overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all">
+              <div className="bg-charcoal rounded-lg overflow-hidden group border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
                 <div className="aspect-video bg-midnight relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-neon-green font-display">E-Commerce</span>
+                    <span className="text-neon-green font-display">Aviation</span>
+                  </div>
+                  {/* Aviation Icon - Airplane */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-tech-blue/30 w-24 h-24">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M21 16V14L13 9V3.5C13 2.67 12.33 2 11.5 2C10.67 2 10 2.67 10 3.5V9L2 14V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5L21 16Z" />
+                    </svg>
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-display font-bold text-neon-green mb-2">
-                    Scalable E-Commerce Platform
+                    Aviation Company Website
                   </h3>
-                  <p className="text-gray-300 mb-4">
-                    Built a cloud-native platform handling 10M+ daily transactions
-                    with 99.99% uptime.
+                  <p className="text-gray-300">
+                    Enhanced and currently maintaining a website for a leading aviation company,
+                    implementing performance optimizations and adding interactive features for an improved user experience.
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-neon-green">Read More →</span>
-                    <span className="text-gray-400">Growth: 400%</span>
-                  </div>
                 </div>
               </div>
             </ScrollReveal>
