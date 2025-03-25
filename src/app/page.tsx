@@ -602,49 +602,55 @@ export default function Home() {
           </ScrollReveal>
           
           <ScrollReveal animation="bounce-in" delay={200}>
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-charcoal rounded-xl p-8 border border-neon-green/20 shadow-lg shadow-neon-green/5">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-gray-300 mb-2" htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full bg-midnight border border-neon-green/20 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-neon-green transition-colors"
-                      placeholder="John Doe"
-                    />
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-charcoal rounded-xl p-8 border border-neon-green/20 shadow-lg shadow-neon-green/5">
+                <form className="space-y-6" action="https://formspree.io/f/xeqgeknq" method="POST">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-gray-300 mb-2" htmlFor="name">Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="w-full bg-midnight border border-neon-green/20 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-neon-green transition-colors"
+                        placeholder="John Doe"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-gray-300 mb-2" htmlFor="email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="w-full bg-midnight border border-neon-green/20 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-neon-green transition-colors"
+                        placeholder="john@example.com"
+                        required
+                      />
+                    </div>
                   </div>
                   <div>
-                    <label className="block text-gray-300 mb-2" htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      id="email"
+                    <label className="block text-gray-300 mb-2" htmlFor="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
                       className="w-full bg-midnight border border-neon-green/20 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-neon-green transition-colors"
-                      placeholder="john@example.com"
+                      placeholder="Tell us about your project..."
+                      required
                     />
                   </div>
-                </div>
-                <div>
-                  <label className="block text-gray-300 mb-2" htmlFor="message">Message</label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full bg-midnight border border-neon-green/20 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-neon-green transition-colors"
-                    placeholder="Tell us about your project..."
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-neon-green to-cyber-teal text-midnight font-display font-bold py-4 px-8 rounded-lg hover:opacity-90 transition-opacity shadow-glow-sm"
-                >
-                  Launch Project →
-                </button>
-              </form>
+                  <button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-neon-green to-cyber-teal text-midnight font-display font-bold py-4 px-8 rounded-lg hover:opacity-90 transition-opacity shadow-glow-sm"
+                  >
+                    Launch Project →
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
           </ScrollReveal>
-    </div>
+        </div>
       </section>
 
       {/* Footer Section */}
