@@ -219,7 +219,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <ScrollReveal animation="slide-up" delay={100}>
-              <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group">
+              <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
                 <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Innovation First</h3>
                 <p className="text-gray-300 relative z-10">
@@ -231,7 +231,7 @@ export default function Home() {
             </ScrollReveal>
             
             <ScrollReveal animation="slide-up" delay={200}>
-              <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group">
+              <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyber-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
                 <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Client Success</h3>
                 <p className="text-gray-300 relative z-10">
@@ -243,7 +243,7 @@ export default function Home() {
             </ScrollReveal>
             
             <ScrollReveal animation="slide-up" delay={300}>
-              <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group">
+              <div className="bg-charcoal p-8 rounded-xl border border-neon-green/10 transform hover:scale-105 transition-transform relative group h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
                 <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Future Ready</h3>
                 <p className="text-gray-300 relative z-10">
@@ -278,53 +278,9 @@ export default function Home() {
           </ScrollReveal>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Service 1 */}
+            {/* Service 1 - Custom Development (moved from position 3) */}
             <ScrollReveal animation="scale-in" delay={100}>
-              <div className="group relative bg-charcoal rounded-xl p-6 overflow-hidden border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Digital Transformation</h3>
-                <ul className="space-y-3 text-gray-300 relative z-10">
-                  <li className="flex items-start">
-                    <span className="text-neon-green mr-2">→</span>
-                    Legacy System Modernization
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-neon-green mr-2">→</span>
-                    Cloud Migration Strategy
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-neon-green mr-2">→</span>
-                    Process Automation
-                  </li>
-                </ul>
-              </div>
-            </ScrollReveal>
-            
-            {/* Service 2 */}
-            <ScrollReveal animation="scale-in" delay={200}>
-              <div className="group relative bg-charcoal rounded-xl p-6 overflow-hidden border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyber-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">AI & Machine Learning</h3>
-                <ul className="space-y-3 text-gray-300 relative z-10">
-                  <li className="flex items-start">
-                    <span className="text-neon-green mr-2">→</span>
-                    Predictive Analytics
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-neon-green mr-2">→</span>
-                    Natural Language Processing
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-neon-green mr-2">→</span>
-                    Computer Vision Solutions
-                  </li>
-                </ul>
-              </div>
-            </ScrollReveal>
-            
-            {/* Service 3 */}
-            <ScrollReveal animation="scale-in" delay={300}>
-              <div className="group relative bg-charcoal rounded-xl p-6 overflow-hidden border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all">
+              <div className="group relative bg-charcoal rounded-xl p-6 overflow-hidden border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Custom Development</h3>
                 <ul className="space-y-3 text-gray-300 relative z-10">
@@ -339,6 +295,50 @@ export default function Home() {
                   <li className="flex items-start">
                     <span className="text-neon-green mr-2">→</span>
                     API Integration
+                  </li>
+                </ul>
+              </div>
+            </ScrollReveal>
+            
+            {/* Service 2 */}
+            <ScrollReveal animation="scale-in" delay={200}>
+              <div className="group relative bg-charcoal rounded-xl p-6 overflow-hidden border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyber-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">AI & Machine Learning</h3>
+                <ul className="space-y-3 text-gray-300 relative z-10">
+                  <li className="flex items-start">
+                    <span className="text-neon-green mr-2">→</span>
+                    Predictive Analytics
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-neon-green mr-2">→</span>
+                    Natural Language Processing
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-neon-green mr-2">→</span>
+                    Generative AI Integration
+                  </li>
+                </ul>
+              </div>
+            </ScrollReveal>
+            
+            {/* Service 3 - Networking Solutions (replacing Digital Transformation) */}
+            <ScrollReveal animation="scale-in" delay={300}>
+              <div className="group relative bg-charcoal rounded-xl p-6 overflow-hidden border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full">
+                <div className="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <h3 className="text-2xl font-display font-bold text-neon-green mb-4 relative z-10">Networking Solutions</h3>
+                <ul className="space-y-3 text-gray-300 relative z-10">
+                  <li className="flex items-start">
+                    <span className="text-neon-green mr-2">→</span>
+                    Cross-Protocol Integration
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-neon-green mr-2">→</span>
+                    Cloud-Native Microservices Orchestration
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-neon-green mr-2">→</span>
+                    SD-WAN Orchestration
                   </li>
                 </ul>
               </div>
