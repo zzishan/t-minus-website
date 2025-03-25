@@ -100,90 +100,90 @@ export default function Home() {
                 <div className="absolute w-full h-full">
                   {/* Vision Pillar 1 - Top Left */}
                   <ScrollReveal animation="slide-right" delay={100}
-                    className="absolute -top-20 -left-20 md:-top-24 md:-left-24 w-full max-w-xs">
+                    className="absolute -top-14 -left-14 md:-top-16 md:-left-16 w-full max-w-xs">
                     <div className="group">
-                      <div className="bg-midnight/60 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:translate-x-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
-                        <div className="flex items-center mb-3">
-                          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 md:mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <div className="bg-midnight/60 backdrop-blur-sm p-4 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:translate-x-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
+                        <div className="flex items-center mb-2">
+                          <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 group-hover:bg-neon-green/20 transition-colors">
                             <span className="text-neon-green text-xl font-bold">1</span>
                           </div>
-                          <h3 className="text-xl md:text-2xl font-display font-bold text-neon-green">Accessible Technology</h3>
+                          <h3 className="text-xl font-display font-bold text-neon-green">Accessible Technology</h3>
                         </div>
-                        <p className="text-gray-300 text-sm md:text-base">
+                        <p className="text-gray-300 text-sm">
                           We're committed to democratizing technology, making cutting-edge solutions 
                           accessible to businesses of all sizes.
                         </p>
                       </div>
-                      <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-neon-green/20 rounded-br-3xl -mb-6 -mr-6"></div>
+                      <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-neon-green/30 rounded-br-3xl -mb-4 -mr-4"></div>
                     </div>
                   </ScrollReveal>
                   
                   {/* Vision Pillar 2 - Top Right */}
                   <ScrollReveal animation="slide-left" delay={200}
-                    className="absolute -top-20 -right-20 md:-top-24 md:-right-24 w-full max-w-xs">
+                    className="absolute -top-14 -right-14 md:-top-16 md:-right-16 w-full max-w-xs">
                     <div className="group">
-                      <div className="bg-midnight/60 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:translate-x-[8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
-                        <div className="flex items-center mb-3">
-                          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 md:mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <div className="bg-midnight/60 backdrop-blur-sm p-4 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[-8px] group-hover:translate-x-[8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
+                        <div className="flex items-center mb-2">
+                          <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 group-hover:bg-neon-green/20 transition-colors">
                             <span className="text-neon-green text-xl font-bold">2</span>
                           </div>
-                          <h3 className="text-xl md:text-2xl font-display font-bold text-neon-green">New Age Solutions</h3>
+                          <h3 className="text-xl font-display font-bold text-neon-green">New Age Solutions</h3>
                         </div>
-                        <p className="text-gray-300 text-sm md:text-base">
+                        <p className="text-gray-300 text-sm">
                           We harness emerging technologies like AI, machine learning, and advanced 
                           cloud architectures to create competitive advantages.
                         </p>
                       </div>
-                      <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-neon-green/20 rounded-bl-3xl -mb-6 -ml-6"></div>
+                      <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-neon-green/30 rounded-bl-3xl -mb-4 -ml-4"></div>
                     </div>
                   </ScrollReveal>
                   
                   {/* Vision Pillar 3 - Bottom Left */}
                   <ScrollReveal animation="slide-right" delay={300}
-                    className="absolute -bottom-20 -left-20 md:-bottom-24 md:-left-24 w-full max-w-xs">
+                    className="absolute -bottom-14 -left-14 md:-bottom-16 md:-left-16 w-full max-w-xs">
                     <div className="group">
-                      <div className="bg-midnight/60 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[8px] group-hover:translate-x-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
-                        <div className="flex items-center mb-3">
-                          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 md:mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <div className="bg-midnight/60 backdrop-blur-sm p-4 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[8px] group-hover:translate-x-[-8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
+                        <div className="flex items-center mb-2">
+                          <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 group-hover:bg-neon-green/20 transition-colors">
                             <span className="text-neon-green text-xl font-bold">3</span>
                           </div>
-                          <h3 className="text-xl md:text-2xl font-display font-bold text-neon-green">Problem-Specific Innovation</h3>
+                          <h3 className="text-xl font-display font-bold text-neon-green">Problem-Specific Innovation</h3>
                         </div>
-                        <p className="text-gray-300 text-sm md:text-base">
+                        <p className="text-gray-300 text-sm">
                           We believe in purposeful innovation – developing tailored solutions that address 
                           specific business challenges for maximum impact.
                         </p>
                       </div>
-                      <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-neon-green/20 rounded-tr-3xl -mt-6 -mr-6"></div>
+                      <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-neon-green/30 rounded-tr-3xl -mt-4 -mr-4"></div>
                     </div>
                   </ScrollReveal>
                   
                   {/* Vision Pillar 4 - Bottom Right */}
                   <ScrollReveal animation="slide-left" delay={400}
-                    className="absolute -bottom-20 -right-20 md:-bottom-24 md:-right-24 w-full max-w-xs">
+                    className="absolute -bottom-14 -right-14 md:-bottom-16 md:-right-16 w-full max-w-xs">
                     <div className="group">
-                      <div className="bg-midnight/60 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[8px] group-hover:translate-x-[8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
-                        <div className="flex items-center mb-3">
-                          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 md:mr-4 group-hover:bg-neon-green/20 transition-colors">
+                      <div className="bg-midnight/60 backdrop-blur-sm p-4 rounded-xl border border-neon-green/20 transform transition-all duration-300 group-hover:translate-y-[8px] group-hover:translate-x-[8px] group-hover:border-neon-green/50 group-hover:shadow-lg group-hover:shadow-neon-green/10">
+                        <div className="flex items-center mb-2">
+                          <div className="w-10 h-10 rounded-full bg-neon-green/10 flex items-center justify-center mr-3 group-hover:bg-neon-green/20 transition-colors">
                             <span className="text-neon-green text-xl font-bold">4</span>
                           </div>
-                          <h3 className="text-xl md:text-2xl font-display font-bold text-neon-green">Holistic Efficiency</h3>
+                          <h3 className="text-xl font-display font-bold text-neon-green">Holistic Efficiency</h3>
                         </div>
-                        <p className="text-gray-300 text-sm md:text-base">
+                        <p className="text-gray-300 text-sm">
                           Our definition of efficiency goes beyond performance metrics, creating solutions 
                           that are sustainable and scalable.
                         </p>
                       </div>
-                      <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-neon-green/20 rounded-tl-3xl -mt-6 -ml-6"></div>
+                      <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-neon-green/30 rounded-tl-3xl -mt-4 -ml-4"></div>
                     </div>
                   </ScrollReveal>
                   
                   {/* Diagonal connectors */}
                   <div className="absolute inset-0 z-10 pointer-events-none">
-                    <div className="absolute top-0 left-0 w-1/2 h-1/2 border-t-0 border-l-0 border-b-2 border-r-2 border-neon-green/10 rounded-br-full"></div>
-                    <div className="absolute top-0 right-0 w-1/2 h-1/2 border-t-0 border-r-0 border-b-2 border-l-2 border-neon-green/10 rounded-bl-full"></div>
-                    <div className="absolute bottom-0 left-0 w-1/2 h-1/2 border-b-0 border-l-0 border-t-2 border-r-2 border-neon-green/10 rounded-tr-full"></div>
-                    <div className="absolute bottom-0 right-0 w-1/2 h-1/2 border-b-0 border-r-0 border-t-2 border-l-2 border-neon-green/10 rounded-tl-full"></div>
+                    <div className="absolute top-0 left-0 w-1/2 h-1/2 border-t-0 border-l-0 border-b border-r border-neon-green/10 rounded-br-full"></div>
+                    <div className="absolute top-0 right-0 w-1/2 h-1/2 border-t-0 border-r-0 border-b border-l border-neon-green/10 rounded-bl-full"></div>
+                    <div className="absolute bottom-0 left-0 w-1/2 h-1/2 border-b-0 border-l-0 border-t border-r border-neon-green/10 rounded-tr-full"></div>
+                    <div className="absolute bottom-0 right-0 w-1/2 h-1/2 border-b-0 border-r-0 border-t border-l border-neon-green/10 rounded-tl-full"></div>
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
             
             {/* Mission statement - with glowing accent */}
             <ScrollReveal animation="fade-in" delay={600}>
-              <div className="mt-24 md:mt-32 text-center relative">
+              <div className="mt-20 md:mt-24 text-center relative">
                 <div className="inline-block bg-midnight/40 backdrop-blur-md px-10 py-8 rounded-xl border border-neon-green/20 relative overflow-hidden group hover:border-neon-green/40 transition-colors">
                   <div className="absolute -inset-1 bg-gradient-to-r from-neon-green/20 via-tech-blue/10 to-cyber-teal/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <p className="text-2xl text-gray-300 italic font-display relative z-10">
