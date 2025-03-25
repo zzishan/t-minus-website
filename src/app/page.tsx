@@ -546,42 +546,38 @@ export default function Home() {
           </ScrollReveal>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Testimonial 1 */}
+            {/* Testimonial 1 - Unikraft */}
             <ScrollReveal animation="rotate-in" delay={100}>
               <div className="relative h-full">
                 <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
                 <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
                   <p className="text-gray-300 mb-6 relative z-10 flex-grow">
-                    &ldquo;T Minus transformed our business with their innovative solutions.
-                    Their team&apos;s expertise and dedication to our success was exceptional.
-                    We&apos;ve seen a 200% increase in efficiency since implementation.&rdquo;
+                    &ldquo;T Minus delivered an exceptional process mapping tool that has revolutionized our industrial automation workflows. Their solution has streamlined our operations and dramatically improved our project delivery timelines. Their technical expertise and commitment to our success has made them a valuable partner.&rdquo;
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
                     <div>
-                      <h4 className="font-display font-bold text-neon-green">Michael Chang</h4>
-                      <p className="text-gray-400">CTO, TechCorp Global</p>
+                      <h4 className="font-display font-bold text-neon-green">Datta Shinde</h4>
+                      <p className="text-gray-400">CEO, Unikraft</p>
                     </div>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
             
-            {/* Testimonial 2 */}
+            {/* Testimonial 2 - Y.S. Aviations */}
             <ScrollReveal animation="rotate-in" delay={200}>
               <div className="relative h-full">
                 <div className="absolute -top-4 -left-4 text-6xl text-neon-green opacity-30">"</div>
                 <div className="bg-charcoal rounded-lg p-8 relative border border-neon-green/10 hover:shadow-lg hover:shadow-neon-green/5 transition-all h-full flex flex-col">
                   <p className="text-gray-300 mb-6 relative z-10 flex-grow">
-                    &ldquo;The advanced infrastructure T Minus designed for us has positioned
-                    our company years ahead of the competition. Their vision for the future
-                    of technology is unmatched in the industry.&rdquo;
+                    &ldquo;The enhancements T Minus made to our aviation website have significantly improved user engagement and operational efficiency. Their team's technical prowess and responsive support have been invaluable. They've transformed our digital presence while maintaining the distinctive character of our brand.&rdquo;
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-midnight rounded-full border border-neon-green/20" />
                     <div>
-                      <h4 className="font-display font-bold text-neon-green">Dr. Elena Rodriguez</h4>
-                      <p className="text-gray-400">Head of Innovation, Future Systems</p>
+                      <h4 className="font-display font-bold text-neon-green">Mohammad Sadik</h4>
+                      <p className="text-gray-400">CEO & Director, Y.S. Aviations</p>
                     </div>
                   </div>
                 </div>
